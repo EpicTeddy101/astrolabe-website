@@ -1,0 +1,10 @@
+{
+    "label": "Midas",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Midas Description",
+      "slug": "/midas"
+    }
+  }
+  

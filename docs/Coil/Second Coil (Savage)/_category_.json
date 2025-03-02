@@ -1,0 +1,9 @@
+{
+  "label": "Second Coil (Savage)",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Second Coil (Savage) Description",
+    "slug": "/second-coil-savage"
+  }
+}

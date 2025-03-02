@@ -1,0 +1,10 @@
+{
+    "label": "Sigmascape",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Sigmascape Description",
+      "slug": "/sigmascape"
+    }
+  }
+  

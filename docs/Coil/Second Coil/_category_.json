@@ -1,0 +1,9 @@
+{
+  "label": "Second Coil",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Second Coil Description",
+    "slug": "/second-coil"
+  }
+}

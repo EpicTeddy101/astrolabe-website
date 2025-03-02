@@ -1,0 +1,10 @@
+{
+    "label": "Omega",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Omega Description",
+      "slug": "/omega"
+    }
+  }
+  

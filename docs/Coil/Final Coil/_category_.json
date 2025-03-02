@@ -1,0 +1,9 @@
+{
+  "label": "Final Coil",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Final Coil Description",
+    "slug": "/final-coil"
+  }
+}
