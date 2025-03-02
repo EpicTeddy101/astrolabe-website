@@ -127,11 +127,11 @@ const config = {
             items: [
               {
                 label: 'Savage Raids',
-                to: '/savage-raids',
+                to: '/coil', // To be changed to own page
               },
               {
                 label: 'Extreme Trials', 
-                to: '/extreme-trials',
+                to: '/arr-ex', // To be changed to own page
               }
             ],
           },
