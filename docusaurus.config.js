@@ -59,6 +59,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -121,43 +126,39 @@ const config = {
             title: 'Resources',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Savage Raids',
+                to: '/savage-raids',
               },
+              {
+                label: 'Extreme Trials', 
+                to: '/extreme-trials',
+              }
             ],
+          },
+          {
+            title: 'Info',
+            items: [
+              {
+                label: 'About Us',
+                href: '/about'
+              },
+              {
+                label: 'FAQ',
+                href: '/faq'
+              }
+            ]
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://discord.gg/eByG8hraBM',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. | © SQUARE ENIX CO., LTD. All rights reserved. | All content © their respective authors.`,
       },
       prism: {
         theme: prismThemes.github,
