@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Astrolabe Website (TBD)',
+  tagline: 'A FFXIV Savage and Extreme repository for old fights.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -42,26 +42,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -76,23 +62,55 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Astrolate Website',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Astrolabe Website Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Resources',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'savageSidebar',
+                label: 'Savage Raids'
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'trialSidebar',
+                label: 'Extreme Trials'
+              }
+            ]
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'dropdown',
+            position: 'left',
+            label: 'Info',
+            items: [
+              {
+                label: 'About Us',
+                href: '/about'
+              },
+              {
+                label: 'FAQ',
+                href: '/faq'
+              }
+            ]
+          },
+          {
             position: 'right',
+            to: 'https://github.com/EpicTeddy101/astrolabe-website',
+            className: 'header-github',
+            'aria-label': 'GitHub Repository',
+          },
+          {
+            position: 'right',
+            to: 'https://discord.gg/eByG8hraBM',
+            className: 'header-discord',
+            'aria-label': 'Discord Server',
           },
         ],
       },
@@ -100,7 +118,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Resources',
             items: [
               {
                 label: 'Tutorial',
